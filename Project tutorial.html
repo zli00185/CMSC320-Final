@@ -15326,7 +15326,1104 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[64]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Find the highest average values groupby language</span>
+<span class="n">ave</span> <span class="o">=</span> <span class="n">streamer_1</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Language&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Watch time(Minutes)&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[64]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>English</th>
+      <td>4.719196e+08</td>
+      <td>124482.340206</td>
+      <td>41639.719588</td>
+      <td>5112.814433</td>
+      <td>705685.645361</td>
+      <td>203294.319588</td>
+      <td>1.253701e+07</td>
+      <td>0.981443</td>
+      <td>0.280412</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[65]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Stream time(minutes)&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[65]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Other</th>
+      <td>298828170.0</td>
+      <td>232620.0</td>
+      <td>11533.0</td>
+      <td>1149.0</td>
+      <td>30986.0</td>
+      <td>29434.0</td>
+      <td>60922719.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Peak viewers&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[54]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Arabic</th>
+      <td>239050428.0</td>
+      <td>49935.0</td>
+      <td>58281.4</td>
+      <td>5682.2</td>
+      <td>816537.6</td>
+      <td>479938.2</td>
+      <td>2779680.6</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[55]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Average viewers&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[55]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Russian</th>
+      <td>3.762245e+08</td>
+      <td>91293.648649</td>
+      <td>44290.013514</td>
+      <td>6594.22973</td>
+      <td>339730.486486</td>
+      <td>136863.5</td>
+      <td>1.650215e+07</td>
+      <td>0.905405</td>
+      <td>0.121622</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[56]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Followers&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[56]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Arabic</th>
+      <td>239050428.0</td>
+      <td>49935.0</td>
+      <td>58281.4</td>
+      <td>5682.2</td>
+      <td>816537.6</td>
+      <td>479938.2</td>
+      <td>2779680.6</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[57]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Followers gained&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[57]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Spanish</th>
+      <td>3.761948e+08</td>
+      <td>72732.352941</td>
+      <td>53186.985294</td>
+      <td>6449.691176</td>
+      <td>779686.117647</td>
+      <td>570378.073529</td>
+      <td>9.815709e+06</td>
+      <td>0.985294</td>
+      <td>0.161765</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[77]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Views gained&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[77]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Other</th>
+      <td>298828170.0</td>
+      <td>232620.0</td>
+      <td>11533.0</td>
+      <td>1149.0</td>
+      <td>30986.0</td>
+      <td>29434.0</td>
+      <td>60922719.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[72]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Partnered&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">14</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[72]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Arabic</th>
+      <td>2.390504e+08</td>
+      <td>49935.000000</td>
+      <td>58281.400000</td>
+      <td>5682.200000</td>
+      <td>816537.600000</td>
+      <td>479938.200000</td>
+      <td>2.779681e+06</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Hungarian</th>
+      <td>2.322294e+08</td>
+      <td>111825.000000</td>
+      <td>24780.000000</td>
+      <td>2140.500000</td>
+      <td>347856.500000</td>
+      <td>91755.000000</td>
+      <td>8.220000e+06</td>
+      <td>1.000000</td>
+      <td>0.500000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Thai</th>
+      <td>2.456589e+08</td>
+      <td>165415.909091</td>
+      <td>16194.636364</td>
+      <td>2011.363636</td>
+      <td>202150.363636</td>
+      <td>57836.454545</td>
+      <td>8.850383e+06</td>
+      <td>1.000000</td>
+      <td>0.272727</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Swedish</th>
+      <td>1.316218e+08</td>
+      <td>128085.000000</td>
+      <td>2727.000000</td>
+      <td>1027.000000</td>
+      <td>96691.000000</td>
+      <td>25277.000000</td>
+      <td>5.787660e+06</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Slovak</th>
+      <td>3.042222e+08</td>
+      <td>148335.000000</td>
+      <td>9248.000000</td>
+      <td>2072.000000</td>
+      <td>252184.000000</td>
+      <td>37681.000000</td>
+      <td>8.585834e+06</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Polish</th>
+      <td>3.584857e+08</td>
+      <td>129095.000000</td>
+      <td>19968.083333</td>
+      <td>2905.250000</td>
+      <td>397090.583333</td>
+      <td>118359.666667</td>
+      <td>1.060100e+07</td>
+      <td>1.000000</td>
+      <td>0.083333</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Chinese</th>
+      <td>3.389560e+08</td>
+      <td>150564.000000</td>
+      <td>13104.366667</td>
+      <td>3424.800000</td>
+      <td>201714.533333</td>
+      <td>28209.933333</td>
+      <td>1.062829e+07</td>
+      <td>1.000000</td>
+      <td>0.333333</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Italian</th>
+      <td>2.520991e+08</td>
+      <td>123131.470588</td>
+      <td>17425.117647</td>
+      <td>2205.529412</td>
+      <td>328961.882353</td>
+      <td>196034.411765</td>
+      <td>1.045876e+07</td>
+      <td>1.000000</td>
+      <td>0.058824</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Japanese</th>
+      <td>4.186577e+08</td>
+      <td>143068.500000</td>
+      <td>22013.500000</td>
+      <td>4762.600000</td>
+      <td>160145.800000</td>
+      <td>59482.800000</td>
+      <td>8.715876e+06</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Greek</th>
+      <td>2.305530e+08</td>
+      <td>123345.000000</td>
+      <td>6289.000000</td>
+      <td>1961.000000</td>
+      <td>82289.000000</td>
+      <td>51159.000000</td>
+      <td>4.148542e+06</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Finnish</th>
+      <td>2.157269e+08</td>
+      <td>209625.000000</td>
+      <td>9676.000000</td>
+      <td>1027.000000</td>
+      <td>255595.000000</td>
+      <td>29422.000000</td>
+      <td>1.028463e+07</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Czech</th>
+      <td>2.870943e+08</td>
+      <td>140782.500000</td>
+      <td>9918.500000</td>
+      <td>1827.666667</td>
+      <td>247374.833333</td>
+      <td>92805.000000</td>
+      <td>9.351374e+06</td>
+      <td>1.000000</td>
+      <td>0.500000</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Turkish</th>
+      <td>2.847102e+08</td>
+      <td>71330.454545</td>
+      <td>29991.545455</td>
+      <td>4760.863636</td>
+      <td>718936.000000</td>
+      <td>259308.227273</td>
+      <td>1.086601e+07</td>
+      <td>1.000000</td>
+      <td>0.272727</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Korean</th>
+      <td>3.609664e+08</td>
+      <td>119885.259740</td>
+      <td>18633.038961</td>
+      <td>3913.883117</td>
+      <td>262173.870130</td>
+      <td>86643.428571</td>
+      <td>9.476194e+06</td>
+      <td>0.987013</td>
+      <td>0.012987</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[75]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">ave</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Mature&#39;</span><span class="p">],</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[75]:</div>
+
+
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Watch time(Minutes)</th>
+      <th>Stream time(minutes)</th>
+      <th>Peak viewers</th>
+      <th>Average viewers</th>
+      <th>Followers</th>
+      <th>Followers gained</th>
+      <th>Views gained</th>
+      <th>Partnered</th>
+      <th>Mature</th>
+      <th>count</th>
+    </tr>
+    <tr>
+      <th>Language</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Finnish</th>
+      <td>215726910.0</td>
+      <td>209625.0</td>
+      <td>9676.0</td>
+      <td>1027.000000</td>
+      <td>255595.000000</td>
+      <td>29422.0</td>
+      <td>10284627.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Swedish</th>
+      <td>131621775.0</td>
+      <td>128085.0</td>
+      <td>2727.0</td>
+      <td>1027.000000</td>
+      <td>96691.000000</td>
+      <td>25277.0</td>
+      <td>5787660.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <th>Czech</th>
+      <td>287094345.0</td>
+      <td>140782.5</td>
+      <td>9918.5</td>
+      <td>1827.666667</td>
+      <td>247374.833333</td>
+      <td>92805.0</td>
+      <td>9351373.5</td>
+      <td>1.0</td>
+      <td>0.5</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Among all of those columns above, we could conclude that English streamers have the longest average watch time, other language streamers have the longest average streaming time, Arabic streamers have the highest average peak viewers count, Russian streamers have the highest average viewers count, Arabic streamers have the highest average followers count, Spanish streamers have the highest followers gained count, other language streamers have the highest views gained count, and there are 13 different language streamers share the highest partnered rate which is 100%, and Finnish, Swedish streamers share the highest mature content rate, which is 100%. I think the latter two highest rates were shared by more than one streamer language because there are only one or two streamers using those languages in the top 1000.</p>
+<p>So next we will find out what the percentage of each language used among them.</p>
+
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[45]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Generate countplot and group by descending order</span>
@@ -15725,6 +16822,14 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>From this plot, we can see that it doesn't show too much difference among the top 10 longest streaming time, and all of them surpass 500000 minutues.</p>
+
+</div>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
